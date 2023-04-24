@@ -4,6 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep4 World!");
+        List<int> numbers = new List<int>();
+        int value;
+
+        do {
+            Console.Write("Enter a number: ");
+            value = int.Parse(Console.ReadLine());
+
+            if (value != 0) {
+                numbers.Add(value);
+            }
+
+        } while (value != 0);
+
     }
 }
