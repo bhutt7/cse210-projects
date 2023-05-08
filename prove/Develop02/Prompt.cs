@@ -5,11 +5,22 @@ public class Prompt
 
     public Prompt()
     {
-        _prompts.Add("How was your day?");
+        _prompts.Add("What was your greatest accomplishment today?");
+        _prompts.Add("What are you grateful for today?");
+        _prompts.Add("Did you encounter any difficult situations, and how did you overcome them?");
+        _prompts.Add("What is something you want to achieve?");
+        _prompts.Add("What is something you want to change about yourself?");
     }
 
     public string GetRandomPrompt()
     {
-        return "This is a prompt";
+        if (_usedPrompts.Count == 5)
+        {
+            _prompts = _usedPrompts;
+            _usedPrompts.Clear();
+        }
+        var random = new Random();
+        var randomNumber = random.Next(0, _prompts.Count);
+        return _prompts[randomNumber];
     }
 }
