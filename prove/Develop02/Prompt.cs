@@ -21,6 +21,9 @@ public class Prompt
         }
         var random = new Random();
         var randomNumber = random.Next(0, _prompts.Count);
-        return _prompts[randomNumber];
+        string prompt = _prompts[randomNumber];
+        _usedPrompts.Add(prompt);
+        _prompts.RemoveAt(randomNumber);
+        return prompt;
     }
 }
