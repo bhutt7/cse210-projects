@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Prompt prompt = new Prompt();
-        string x = prompt.GetRandomPrompt();
-        Console.Write(x);
+        Journal journal = new Journal();
+        Menu menu = new Menu(journal);
+        menu.Display();
     }
 }

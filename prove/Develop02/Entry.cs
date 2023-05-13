@@ -1,18 +1,24 @@
 public class Entry
 {
-    private DateTime _currentDateTime;
+    private string _date;
     private string _prompt;
     private string _response;
 
-    public Entry()
+    public Entry(string date, string prompt, string response)
     {
-        _currentDateTime = DateTime.Now;
-        _prompt = ;
+        _date = date;
+        _prompt = prompt;
+        _response = response;
         
     }
 
     public string Display()
     {
-        return $"{_currentDateTime}\n{_prompt}\n{_response}"
+        return $"{_date}\n{_prompt}\n{_response}\n----------------------------------------";
+    }
+
+    public string Save()
+    {
+        return $"{_date}|{_prompt}|{_response}";
     }
 }

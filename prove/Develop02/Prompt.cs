@@ -14,16 +14,23 @@ public class Prompt
 
     public string GetRandomPrompt()
     {
-        if (_usedPrompts.Count == 5)
-        {
-            _prompts = _usedPrompts;
-            _usedPrompts.Clear();
-        }
         var random = new Random();
         var randomNumber = random.Next(0, _prompts.Count);
         string prompt = _prompts[randomNumber];
         _usedPrompts.Add(prompt);
         _prompts.RemoveAt(randomNumber);
         return prompt;
+    }
+
+    public bool IsEmpty()
+    {
+        if (_prompts.Count == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
