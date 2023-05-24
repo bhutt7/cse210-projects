@@ -7,9 +7,21 @@ public class Word
     public Word(string word)
     {
         _word = word;
-        for(int i = 0; i < word.Length; i++)
+        int index = word.Length - 1;
+        if (Char.IsLetter(_word[index]))
         {
-            _hidden += "_";
+            for(int i = 0; i < word.Length; i++)
+            {
+                _hidden += "_";
+            }
+        }
+        else
+        {
+            for(int i = 1; i < word.Length; i++)
+            {
+                _hidden += "_";
+            }
+            _hidden += _word[index];
         }
     }
 
@@ -22,6 +34,23 @@ public class Word
         else
         {
             return _hidden;
+        }
+    }
+
+    public void Hide()
+    {
+        _shown = false;
+    }
+
+    public bool IsHidden()
+    {
+        if (_shown)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

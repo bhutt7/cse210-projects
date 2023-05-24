@@ -10,4 +10,6 @@ public class Scripture
         _reference = reference;
         _words = new List<Word>();
     }
+
+    
 }
