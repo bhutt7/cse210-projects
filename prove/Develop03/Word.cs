@@ -10,14 +10,14 @@ public class Word
         int index = word.Length - 1;
         if (Char.IsLetter(_word[index]))
         {
-            for(int i = 0; i < word.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
                 _hidden += "_";
             }
         }
         else
         {
-            for(int i = 1; i < word.Length; i++)
+            for (int i = 1; i < word.Length; i++)
             {
                 _hidden += "_";
             }
@@ -27,7 +27,7 @@ public class Word
 
     public string Display()
     {
-        if(_shown)
+        if (_shown)
         {
             return _word;
         }
@@ -42,7 +42,7 @@ public class Word
         _shown = false;
     }
 
-    public bool IsHidden()
+    public bool IsShown()
     {
         if (_shown)
         {

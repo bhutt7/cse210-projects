@@ -23,7 +23,7 @@ public class Reference
 
     public string Display()
     {
-        if(_lastVerse == 0)
+        if (_lastVerse == 0)
         {
             return $"{_book} {_chapter}:{_firstVerse}";
         }
