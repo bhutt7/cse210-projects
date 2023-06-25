@@ -1,0 +1,6 @@
+2200
+3
+Simple:Give a talk|Speak in Sacrament meeting when asked|True
+Simple:Run a marathon|Run an entire marathon|True
+Eternal:Study the scriptures|Study for at least 10 minutes
+Checklist:Attend the temple|Attend and perform any ordinance|3|3
