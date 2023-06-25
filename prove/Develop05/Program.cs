@@ -1,6 +1,6 @@
 using System;
 
-// Exceeding Requirements: I added a leveling system based on how many oints are collected. The first threshold for leveling up is 1000 points (Level 2), then each successive threshold is 200 points higher, so the Level 3 comes after 1200 additional points (2200 total), then Level 4 after 1400 additional points (3600 total), and so on.
+// Exceeding Requirements: I added a leveling system based on how many points are collected. The first threshold for leveling up is 1000 points (Level 2), then each successive threshold is 200 points higher, so the Level 3 comes after 1200 additional points (2200 total), then Level 4 after 1400 additional points (3600 total), and so on.
 
 class Program
 {
