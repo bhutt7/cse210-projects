@@ -11,6 +11,6 @@ public class Comment
 
     public string Display()
     {
-        return $"{_name}: {_text}";
+        return $"{_name} - {_text}";
     }
 }

@@ -32,10 +32,13 @@ public class Video
 
     public void Display()
     {
+        Console.WriteLine("-----------------------------------------");
         Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Author: {_author}");
         Console.WriteLine($"Length (in seconds): {_seconds}");
+        Console.WriteLine("-----------------------------------------");
         Console.WriteLine("Comments:");
         ListComments();
+        Console.WriteLine("-----------------------------------------");
     }
 }
