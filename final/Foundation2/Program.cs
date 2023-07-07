@@ -17,7 +17,7 @@ class Program
         order2.AddProduct(new Product("Wine Glass", 111938, 12, 8));
 
         Console.WriteLine("--------------------------------------------");
-        Console.WriteLine("Order 1:");
+        Console.WriteLine("**Order 1**");
         Console.WriteLine("------------------------");
         Console.WriteLine("Packing Label:");
         Console.WriteLine($"{order1.PackingLabel()}");
@@ -29,7 +29,7 @@ class Program
         Console.WriteLine("--------------------------------------------");
         
         Console.WriteLine("--------------------------------------------");
-        Console.WriteLine("Order 2:");
+        Console.WriteLine("**Order 2**");
         Console.WriteLine("------------------------");
         Console.WriteLine("Packing Label:");
         Console.WriteLine($"{order2.PackingLabel()}");
