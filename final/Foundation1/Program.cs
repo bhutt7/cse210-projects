@@ -14,7 +14,7 @@ class Program
 
         videos.Add(one);
 
-        Video two = new Video("God loves us - Music Video","Jessica Andrews",242);
+        Video two = new Video("God loves us - Music Video","Jessica Andrews", 242);
 
         two.AddComment(new Comment("Jeffrey","So amazing! Such beautiful music."));
         two.AddComment(new Comment("Gertrude","Jesus is amazing!"));
